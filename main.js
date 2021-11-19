@@ -13,8 +13,8 @@ function loadingBar(){
     if(width<=27){
     width++;
     bar.style.width= width+'%';
-    let percent = (width*100)/28;
-    bar.innerHTML = percent + '%';
+    let percentage = (width*100)/28;
+    bar.innerHTML = percentage + '%';
     }
 }
 
