@@ -12,31 +12,55 @@ header{
     height: auto;
     background-color: white;
 }
-main{
-    display: flex;
+.container{
     width: 100%;
-    height: 80%;
-    margin: auto;
+    height: auto;
+    margin: 20rem auto auto auto;
 }
-div{
+
+.container > div{
     margin: auto;
     width: 40rem;
     height: 5rem;
     border-radius: 5rem;
     background-color: white;
     clip-path: inset(0 0 0 0);
-}
+    display: flex;
+    align-items: center;
+}    
 
 span{
-    position: relative;
+    
+    position: absolute;
     display: block;
-    width: 36rem;
+    width: 1rem;
     height: 3rem;
     border-radius: 5rem;
-    background-color:black;
+    background-color: gray;
     clip-path: inset(0 0 0 0);
-    margin: auto;
-    margin-top: 1rem;
+    margin: 0 auto 0 2rem;
     transition: .6s all;
 }
 
+/* span.active{
+    visibility: visible;
+    transform:skewX(3.6)
+} */
+
+button{
+    display: block;
+    background-color: white;
+    color: black;
+    width: 15rem;
+    padding: 2rem;
+    margin: 8rem auto;
+    border-radius: 2rem;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    background-color: gray;
+}
