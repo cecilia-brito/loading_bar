@@ -1,4 +1,4 @@
-const btn = document.getElementById('btn');
+const btnStart = document.getElementById('btn');
 const bar = document.getElementById('bar');
 const elemPercentage = document.getElementById('percentage');
 
@@ -6,7 +6,6 @@ let width = 10;
 
 function moveBar(){
     setInterval(loadingBar, 100);
-    resetBtn();
     function loadingBar(){
         if(width<=27){
         width++;
@@ -15,6 +14,11 @@ function moveBar(){
         elemPercentage.textContent = percentage + '%';
         }
     }
+
+    if(width>=26){
+        btnStart.classList.toggle('active');
+        btnReset.classList.toggle('active');
+   }
 }    
 
-btn.addEventListener('click', moveBar);
+btnStart.addEventListener('click', moveBar);

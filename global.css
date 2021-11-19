@@ -62,7 +62,7 @@ span{
 }
 
 button{
-    display: block;
+    display: none;
     background-color: white;
     color: black;
     width: 15rem;
@@ -70,10 +70,21 @@ button{
     margin: 0 calc(50% - 10rem) 0 calc(50% - 10rem);
     border-radius: 2rem;
     border: none;
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.active{
+    display: block;
 }
 
 button:hover{
     cursor: pointer;
+    background-color: rgb(221, 221, 221);
 }
 button:active{
     background-color: gray;
