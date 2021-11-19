@@ -1,21 +1,20 @@
 const btn = document.getElementById('btn');
 const bar = document.getElementById('bar');
+const elemPercentage = document.getElementById('percentage');
+
 let width = 10;
 
-function clickingButton(){
-
-    bar.classList.toggle('active');
-
-}
-
-function loadingBar(){
-    setInterval(loadingBar, 15);
-    if(width<=27){
-    width++;
-    bar.style.width= width+'%';
-    let percentage = (width*100)/28;
-    bar.innerHTML = percentage + '%';
+function moveBar(){
+    setInterval(loadingBar, 100);
+    resetBtn();
+    function loadingBar(){
+        if(width<=27){
+        width++;
+        bar.style.width= width+'%';
+        let percentage = Math.round((width*100)/28);
+        elemPercentage.textContent = percentage + '%';
+        }
     }
-}
+}    
 
-btn.addEventListener('click', loadingBar);
+btn.addEventListener('click', moveBar);

@@ -3,32 +3,38 @@ html{
 }
 body{
     background-color: black;
-    width: 100vw;
-    height: 100vh;
 }
 
-header{
-    width: 100%;
-    height: auto;
-    background-color: white;
+h1{
+    margin-top: 10rem;
+    text-align: center;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 10rem;
 }
-.container{
+main{
+    display: flex;
     width: 100%;
-    height: auto;
-    margin: 20rem auto auto auto;
-}
-
-.container > div{
+    height: 80%;
     margin: auto;
+    align-items: center;
+}
+
+
+
+.container{
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    
+}    
+.box-bar{
     width: 40rem;
     height: 5rem;
     border-radius: 5rem;
     background-color: white;
     clip-path: inset(0 0 0 0);
-    display: flex;
-    align-items: center;
-}    
-
+}
 span{
     
     position: absolute;
@@ -36,16 +42,24 @@ span{
     width: 1rem;
     height: 3rem;
     border-radius: 5rem;
-    background-color: gray;
+    background-color: black;
     clip-path: inset(0 0 0 0);
-    margin: 0 auto 0 2rem;
+    margin: 1rem auto 0 2rem;
     transition: .6s all;
 }
 
-/* span.active{
-    visibility: visible;
-    transform:skewX(3.6)
-} */
+#percentage{
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    z-index: 1000;
+    margin-top: 4.8rem;
+    margin-left: 2rem;
+    font-family: 'Nova Mono', monospace;
+    font-size: 5rem;
+    background-color: black;
+    color: white;
+}
 
 button{
     display: block;
@@ -53,7 +67,7 @@ button{
     color: black;
     width: 15rem;
     padding: 2rem;
-    margin: 8rem auto;
+    margin: 0 calc(50% - 10rem) 0 calc(50% - 10rem);
     border-radius: 2rem;
     border: none;
 }

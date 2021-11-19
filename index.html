@@ -8,17 +8,21 @@
         <link rel="stylesheet" href="/global.css"></link>
 
         <script src="/main.js" defer type="module"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=VT323&display=swap" rel="stylesheet">
     </head> 
     <body>
-        <header>
-            <h1>Loading...</h1>
-        </header>
-
+        <h1>Loading...</h1>
+        <main>
             <div class="container">
-                <div>
-                    <span id='bar'></span><p></p>
+                <div class="box-bar">
+                    <span id='bar'></span>
                 </div>
+                <p id="percentage">0%</p>
             </div>
+        </main> 
             <button id="btn">Start</button>
     </body>
 </html>       
