@@ -1,4 +1,5 @@
 const btnStart = document.getElementById('btn');
+const btnReset = document.getElementById('reset');
 const bar = document.getElementById('bar');
 const elemPercentage = document.getElementById('percentage');
 
