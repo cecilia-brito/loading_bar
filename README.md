@@ -14,7 +14,7 @@
 
 ## Resultado
 
-<p>Na pasta screenshots com o nome de loading... está a gravação de tela mostrando o resultado</p>
+<p>Na pasta screenshots com o nome de loading... está a gravação de tela mostrando o resultado, você também pode conferir <a href='https://cecilia-brito.github.io/loading_bar/'>aqui</a></p>
 
 ## Sreenshot
 
