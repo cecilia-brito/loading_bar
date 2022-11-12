@@ -48,5 +48,7 @@ function clearBar(){
     console.log("funcção clear, terminei")
 }
 
-btnStart.addEventListener('click', moveBar);
-btnReset.addEventListener('click', clearBar);
+if(btnReset !== null && btnStart !== null){
+    btnStart.addEventListener('click', moveBar);
+    btnReset.addEventListener('click', clearBar);
+}
