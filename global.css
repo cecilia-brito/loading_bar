@@ -25,10 +25,11 @@ main{
     margin: 5rem auto;
     display: flex;
     align-items: center;
+    justify-content: center;
     
 }    
 .box-bar{
-    width: 40rem;
+    width: 42rem;
     height: 5rem;
     border-radius: 5rem;
     background-color: white;
@@ -41,11 +42,10 @@ main{
     border-radius: 5rem;
     background-color: black;
     clip-path: inset(0 0 0 0);
-    /* margin: 1rem auto 0 2rem; */
     margin-left: 1.8rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-right: auto;
+    margin-right: 1.8rem;
     transition: .6s all;
 }
 
@@ -66,22 +66,28 @@ button{
     display: block;
     background-color: white;
     color: black;
-    width: 15rem;
-    padding: 2rem;
-    margin: 0 calc(50% - 10rem) 0 calc(50% - 10rem);
     border-radius: 2rem;
     border: none;
     font-family: 'VT323', monospace;
     font-size: 2rem;
 }
 
-.btn_reset{
+#btn_start{
+    width: 15rem;
+    padding: 2rem;
+    margin-right: 2rem;
+}
+
+.div_buttons{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+#reset{
     display: none;
 }
 
-a{
-    text-decoration: none;
-}
+
 
 button:hover{
     cursor: pointer;
